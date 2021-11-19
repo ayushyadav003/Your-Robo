@@ -1,0 +1,22 @@
+.box{
+    color: green;
+}
+.subBox{
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+}
+.heads{
+    display: grid;
+    padding: 1rem;
+    margin-right: 5rem;
+}
+
+@media screen and (max-width: 900px) {
+    .heads{
+        padding: 10px;
+        margin-right: 0;
+
+    }
+
+}

@@ -1,0 +1,27 @@
+.detailCard{
+    display: inline-flex;
+    }
+   
+.rob{
+    display:  flex;
+    margin-left: 5rem;
+}
+
+.detailback{
+    background-image: url("https://images.squarespace-cdn.com/content/v1/59394df0bf629afcc7dd4bed/1503010573168-1QPOBHEAAWP6SN9I6WI6/CircuitBackground_DARK.jpg?format=2500w");
+    border-radius: 2px;
+    margin: 0 5rem 0 5rem;
+    display: inline-block;
+    padding: 20px;
+  }
+
+  @media screen and (max-width : 900px) {
+      .detailCard{
+          display: flex;
+      }
+    .detailback{
+        margin: 0 2rem 0 10px;
+        padding: 5px;
+        width: fit-content;
+      }
+  }

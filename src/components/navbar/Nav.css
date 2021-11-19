@@ -1,0 +1,122 @@
+.logo{
+    padding: 12px 10px; 
+    margin: 5px 10px;
+    background-color: rgb(77, 74, 74);
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 15px;
+    animation-duration: 1s;
+    animation-direction: reverse;
+    animation-name: logorotate; 
+}
+
+@keyframes logorotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(560deg);
+    }
+  }
+
+.navContent{
+    color: white;
+    border: none;
+    background-color: black;
+    padding: 5px;
+    margin: 0 10px ;
+}
+
+:hover.navContent{
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.itemlink{
+    margin: 10px 10px 0 auto;
+}
+
+.navlink{
+    display: flex;
+    height: fit-content ;
+    /* border: 1px solid green; */
+    margin: 2px 0 5rem 0;
+}
+
+.sidebar{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 0.5rem;
+    right: 1rem;
+    height: 20px;
+    width: 40px;
+    background-color: black;
+    border: none;
+    margin-top: 2px;
+}
+
+.sidebar .Bar{
+    height: 2px;
+    width: 90%;
+    background-color: white ;
+    border-radius: 10px;
+
+}
+.sideitembox{
+    margin: 3rem 0 0 0;
+    
+}
+
+.slidesidebar{
+    position: absolute;
+    margin-left: 60%;
+    height: 100%;
+    width: 40%;
+    background-color:black;
+    
+}
+
+.sidenavContent{
+    color: white;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    border: none;
+    background-color: black;
+    padding: 10px;
+    margin: 10px;
+    margin-left: auto;
+    border-bottom: 1px solid white;
+    animation-duration: 0.7s;
+    animation-direction: reverse;
+    animation-name: rotate;  
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(90deg);
+    }
+  }
+
+:hover.sidenavContent{
+    background-color: grey;
+    border-radius: 10px;
+}
+@media screen and (max-width:500px) {
+
+    .itemlink{
+        display: none;
+    }
+
+    .sidebar{
+        display: flex;
+        margin-left: auto;
+    }    
+
+}
